@@ -12,13 +12,13 @@ Users can sort photos by topic, favourite photos, and click on photos to open a 
 #### Users can easily sort by topic.
 !["Photolabs Animal Topic View"](https://github.com/JacquelineMG/photolabs/blob/main/docs/photolabs_topic_view.jpg)
 
-#### Or view only their favourited photos
+#### Or users can view only their favourited photos
 !["Photolabs Favourite Photos View"](https://github.com/JacquelineMG/photolabs/blob/main/docs/photolabs_favs_view.jpg)
 
 #### A modal window offers users a closer look at photos and suggests other similar photos.
 !["Photolabs Modal View Showing Clicked Photo"](https://github.com/JacquelineMG/photolabs/blob/main/docs/photolabs_modal_view.jpg)
 
-#### The modal view suggests other similar photos.
+#### The modal view also offers other similar photos.
 !["Photolabs Modal View Showing Similar Photos"](https://github.com/JacquelineMG/photolabs/blob/main/docs/photolabs_modal_view_similar_photos.jpg)
 
 
