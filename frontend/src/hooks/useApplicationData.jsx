@@ -244,13 +244,24 @@ const useApplicationData = () => {
   };
 
   // watches for change in showFavs state and displays either allPhotos or photos saved in favInfo
-  // displays no photos if showFavs is true, but there are no faved photos
+  // does not change view if their are not faved photos
+
+
+  const getTopicState = () => {
+    if (!state.topicId) {
+      return state.allPhotos;
+    }
+    return state.setTopic;
+  };
 
   useEffect(() => {
-    state.showFavs === true ?
+    const topicState = getTopicState();
+
+    state.showFavs === true  && (state.favPhotosArray.length > 0) ?
       dispatch({ type: 'SET_USE_PHOTOS', payload: state.favInfo }) :
-      dispatch({ type: 'SET_USE_PHOTOS', payload: state.allPhotos });
+      dispatch({ type: 'SET_USE_PHOTOS', payload: topicState });
   }, [state.showFavs]);
+
  
   return {
     state,
